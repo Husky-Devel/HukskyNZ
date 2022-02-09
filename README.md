@@ -1,1 +1,1 @@
-HuskyNZ-Template
+HuskyNZ
