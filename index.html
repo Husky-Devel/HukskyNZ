@@ -38,13 +38,24 @@
   </script>
 
 
-  <script data-jsd-embedded data-key="143ef6ed-5da6-45c8-bec9-8db719885b13"
-    data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+<!-- THis is for the atilassin support widget DO NOT DELETE <script data-jsd-embedded data-key="143ef6ed-5da6-45c8-bec9-8db719885b13"
+    data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script> 
+-->
 
   <img src="https://static.husky.nz/logo/cover.png" style="width: 30vw; min-width: 330px;" />
 </head>
 
 <body>
+  <script>
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "c3e969b0-3056-46e6-b688-a5bced24a07a",
+        host: "https://wchat.au.freshchat.com"
+      });
+
+    }
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.au.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+  </script>
 
 
 
